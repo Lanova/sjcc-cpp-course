@@ -16,29 +16,32 @@ int main()
     char user_input = 'n';
     int rows = 6;
     int columns = 11;
+    int middle = columns/2+1;
+    int left_limit, right_limit;
 
     do{ 
         cout << "Merry X'mas!\n" ;
         // printing tree
-      
-        for ( int i = 1; i<=rows; i++) {
-           for(int x =rows-1; x>=i; x--) {
-              cout << "-"; 
+        for ( int i = 0; i<=rows-1; i++) {
+            left_limit = middle - i;
+            right_limit = middle + i;
+            for(int x = 1; x<=columns; x++) {
+                if (left_limit <= x && x <= right_limit) {
+                    cout << "*";
+                } else {
+                    cout << "-";
+                }
             }
-            for(int x=1; x<=i; x++){
-              cout<<"*";
-            }
-            
-        cout<<endl;
+            cout<<endl;
         }
         
 
-     
+    
     // user input to repeat the programm
         cout << "Do you want to see the tree again? Please enter \"Y\" for Yes "; 
         cin>> user_input;
-    }while(user_input == 'y'|| user_input == 'Y');
-
+    } while(user_input == 'y'|| user_input == 'Y');
+    
     return 0;
 }
 
