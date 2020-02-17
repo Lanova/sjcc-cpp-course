@@ -26,7 +26,10 @@ int main()
             left_limit = middle - i;
             right_limit = middle + i;
             for(int x = 1; x<=columns; x++) {
-                if(left_limit==x){
+                if(left_limit == x && x == right_limit ) {
+                    cout << "^";
+                }
+                else if(left_limit==x){
                     cout << "/";
                 }
                 else if(right_limit==x){
@@ -34,7 +37,7 @@ int main()
                 }
                 else if(left_limit < x && x < right_limit) {
                     
-                    cout << "*";
+                    cout << " ";
                 } else {
                     cout << "-";
                 }
@@ -58,8 +61,8 @@ int main()
 /* ==========================================================
 
 Problems I had working on this assignment (and how I overcame these problems)
-
-1. 
+1. I made half of the Christmas tree and wasn't able to understand how to move from that point
+I had to rewrite the program.
 
 Other Things I wish to share
 
