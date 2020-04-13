@@ -73,7 +73,7 @@ I had to rewrite the program.
 
 Other Things I wish to share
 
-1. I d like to have exersices that would reflected material that we studied in a class/chapter.
+1. I like to have exersices that reflect material that we studied in a class/chapter. ;)
 
 2. I d like to have a help | hint | advice in a class during the lab if I stuck
 
